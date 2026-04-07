@@ -27,13 +27,14 @@ img {
     
 }
 h3 {
+    width: 300px;
     
     margin-bottom: 50px;
     display: block;
     background-color: beige;
     border-radius: 6px;
     padding: 10px 0;
-    text-align: center;
+    
     
 }
  u
