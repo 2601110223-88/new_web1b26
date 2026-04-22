@@ -33,7 +33,7 @@ h2 {
 }
 
 main {
-    flex-basis: 500px;
+    
     background-color: #fbdff49d;
     border-radius: 160px;
     padding: 62px 100px 32px 100px;
@@ -80,10 +80,6 @@ section h3 {
   padding: 20px 10px 10px 100px;
 }
 
-
-    
-
- u
 ul {
     text-align: center;
 }
@@ -151,4 +147,8 @@ aside nav ul {
 .recentNav ul li a {
     color: #ff00ae;
     font-size: 30px;
+}
+footer p {
+    padding: 62px 100px 32px 100px;
+    text-align: center;
 }
