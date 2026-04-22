@@ -1,17 +1,17 @@
 body {
 background-image: url(img1.jpg);
-    font-size: 33px;
+    font-size: 50px;
 }
 header {
     margin: 0 auto 33px;
-    width: 2000px;
+    width: 3000px;
     text-align: center;
 }
 
 time {
   background-color: #ffa7df7c;
   border-radius: 0px 22px 22px 22px;
-  font-size: 18px;
+  font-size: 55px;
   font-weight: bold;
   color: #000000;
   padding: 11px 23px 10px 18px;
