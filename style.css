@@ -107,12 +107,12 @@ div {
 aside {
     position: fixed;
     right: 30%;
-    top: 100px;
-    width: 200px;
+    top: 200px;
+    width: 300px;
 }
 aside nav h2 {
   margin-bottom: 18px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #7c5d48;
 }
@@ -123,11 +123,12 @@ aside nav ul {
 .categoryNav ul li {
   list-style-type: square;
   color: #7c5d48;
-  margin: 0 0 16px 20px;
+  margin: 0 0 13px 30px;
 }
 .categoryNav ul li a {
   color: #ff00ae;
   font-size: 18px;
+  margin: 0px;
 }
 .recentNav ul {
   height: 200px;
