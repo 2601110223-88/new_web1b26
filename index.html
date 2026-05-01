@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAEL</title>
+    <title>DAEL - Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,19 +23,17 @@
         <main class="imge">
             <div class="slider-container">
                 <button class="prev-btn"> &#10094; </button>
+                
                 <div class="image-wrapper">
-                    <img src="imgh1.jpg" alt="">
-<<<<<<< HEAD
-                    <img src="imgh2.jpg" alt="">
-=======
-                    <img src="imgh15.jpg" alt="">
->>>>>>> c7a659bfa8668a541dcee43994d2f11374bcb989
-                    <img src="imgh3.jpg" alt="">
-                    <img src="imgh4.jpg" alt="">
-                    <img src="imgh5.jpg" alt="">
-                    <img src="imgh6.jpg" alt="">
-                    <img src="imgh7.jpg" alt="">
+                    <img src="imgh1.jpg" alt="이미지1">
+                    <img src="imgh15.jpg" alt="이미지2">
+                    <img src="imgh3.jpg" alt="이미지3">
+                    <img src="imgh4.jpg" alt="이미지4">
+                    <img src="imgh5.jpg" alt="이미지5">
+                    <img src="imgh6.jpg" alt="이미지6">
+                    <img src="imgh7.jpg" alt="이미지7">
                 </div>
+
                 <button class="next-btn"> &#10095; </button>
             </div>
         </main>
@@ -45,21 +43,23 @@
         const wrapper = document.querySelector('.image-wrapper');
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
-        const images = document.querySelectorAll('.image-wrapper img');
-        const totalImages = images.length;
+        const totalImages = document.querySelectorAll('.image-wrapper img').length;
         let index = 0;
 
+       
         nextBtn.addEventListener('click', () => {
             index = (index < totalImages - 1) ? index + 1 : 0;
             updateSlider();
         });
 
+        
         prevBtn.addEventListener('click', () => {
             index = (index > 0) ? index - 1 : totalImages - 1;
             updateSlider();
         });
 
         function updateSlider() {
+           
             wrapper.style.transform = `translateX(${-index * 100}%)`;
         }
     </script>
