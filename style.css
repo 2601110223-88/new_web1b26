@@ -49,10 +49,9 @@ h1 {
 
 .slider-container {
     position: relative;
-    width: 90%;
+    width: 100%;      
     max-width: 800px; 
     margin: 50px auto;
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -60,17 +59,23 @@ h1 {
 .image-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    padding: 0 10%;
    
 }
 
 
 .image-wrapper img {
-    width: 100%;
-    flex: 0 0 100%; 
-    height: 700px;   
+    width: 80%;        
+    flex: 0 0 80%;   
+    height: 600px;     
     object-fit: cover;
+    border-radius: 15px;
 }
 
+.image-wrapper img.active {
+    opacity: 1;
+}
 
 
 .slider-container button {
@@ -106,3 +111,96 @@ h1 {
 
 .prev-btn { left: 20px; }
 .next-btn { right: 20px; }
+
+/* 푸터 전체 스타일 */
+.site-footer {
+    background-color: #f9f9f9; /* 연한 회색 배경 */
+    color: #666;              /* 글자색 */
+    padding: 40px 20px;
+    font-size: 13px;          /* 푸터는 보통 글씨가 작습니다 */
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 상단 구역 (저작권 & 링크) */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.copyright {
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-links a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* 구분선 */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* 하단 사업자 정보 */
+.footer-info {
+    font-style: normal;
+}
+
+.info-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.info-row span {
+    position: relative;
+}
+
+/* 정보 사이에 세로 바(|) 넣기 */
+.info-row span:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    color: #ccc;
+}
+
+/* 모바일 대응: 화면이 작아지면 세로로 정렬 */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .info-row span::after {
+        display: none;
+    }
+}
